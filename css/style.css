@@ -1,11 +1,11 @@
 /* Custom CSS Variables */
 :root {
-    --primary-color: 74 144 226; /* #4A90E2 */
+    --primary-color: 52 73 94; /* #34495E - Azul gris neutro */
     --secondary-color: 108 117 125; /* #6C757D */
     --success-color: 40 167 69; /* #28A745 */
     --danger-color: 220 53 69; /* #DC3545 */
     --warning-color: 255 193 7; /* #FFC107 */
-    --info-color: 23 162 184; /* #17A2B8 */
+    --info-color: 52 73 94; /* #34495E - Mismo color que primary */
     --light-color: 248 249 250; /* #F8F9FA */
     --dark-color: 52 58 64; /* #343A40 */
     --background: 255 255 255; /* #FFFFFF */
@@ -54,7 +54,7 @@ h1, h2, h3, h4, h5, h6 {
     transform: translateX(-50%);
     width: 50px;
     height: 3px;
-    background: linear-gradient(45deg, hsl(var(--primary-color)), hsl(var(--info-color)));
+    background: hsl(var(--primary-color));
     border-radius: 2px;
 }
 
@@ -101,7 +101,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Hero Section */
 .hero-section {
     min-height: 100vh;
-    background: linear-gradient(135deg, hsl(var(--primary-color) / 0.1), hsl(var(--info-color) / 0.1));
+    background: hsl(var(--light-color));
     padding-top: 80px;
 }
 
@@ -284,13 +284,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .btn-primary {
-    background: linear-gradient(45deg, hsl(var(--primary-color)), hsl(var(--info-color)));
+    background: hsl(var(--primary-color));
     border: none;
     color: white;
 }
 
 .btn-primary:hover {
-    background: linear-gradient(45deg, hsl(var(--info-color)), hsl(var(--primary-color)));
+    background: hsl(var(--primary-color) / 0.9);
     transform: translateY(-2px);
     box-shadow: var(--box-shadow-lg);
 }

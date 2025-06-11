@@ -36,7 +36,7 @@ h1, h2, h3, h4, h5, h6 {
     display: inline-block;
     margin-bottom: 3rem;
     font-weight: 700;
-    color: rgb(var(--dark-color));
+    color: rgb(var(--primary-color));
 }
 
 .section-title::after {
